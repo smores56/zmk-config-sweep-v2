@@ -15,7 +15,7 @@
 
 &mt {
     flavor = "tap-preferred";
-    tapping_term_ms = <140>;
+    tapping_term_ms = <120>;
 };
 
 / {
@@ -37,14 +37,14 @@
         };
 
         combo_next_tab {
-            timeout-ms = <100>;
+            timeout-ms = <80>;
             key-positions = <2 4>;
             bindings = <&kp LC(TAB)>;
             layers = <0>;
         };
 
         combo_last_tab {
-            timeout-ms = <100>;
+            timeout-ms = <80>;
             key-positions = <1 4>;
             bindings = <&kp LC(LS(TAB))>;
             layers = <0>;
@@ -105,19 +105,19 @@
 
         MAIN_layer {
             bindings = <
-                &kp Z       &kp C      &kp Y       &kp W        &kp K          &kp X     &kp L      &kp U       &kp CMMA   &kp Q 
-                &mt LSHFT R &mt LALT S &mt LCTRL I &lt SYM T    &kp G          &kp M     &lt SYM N  &mt RCTRL E &mt RALT A &mt RSHFT O
-                &kp J       &kp F      &kp P       &mt LGUI D   &kp B          &kp V     &mt RGUI H &kp APOS    &kp DOT    &kp FSLH
+                &kp Z       &kp C      &kp Y       &kp W        &kp K          &kp X     &kp L      &kp U          &kp CMMA     &kp Q 
+                &kp R       &kp S      &kp I       &lt SYM T    &kp G          &kp M     &lt SYM N  &kp E          &kp A        &kp O
+                &mt LSHFT J &mt LALT F &mt LCTRL P &mt LGUI D   &kp B          &kp V     &mt RGUI H &mt RCTRL APOS &mt RALT DOT &mt RSHFT FSLH
                                                    &lt FN ENTER &lt NAV SPC    &kp RSHFT &kp BKSP 
             >;
         };
 
         SYM_layer {
             bindings = <
-                &kp DLLR  &kp N7 &kp N8 &kp N9 &kp STAR     &kp TILDE &kp LBRC &kp RBRC &kp HASH  &kp PRCNT 
-                &kp EXCL  &kp N1 &kp N2 &kp N3 &kp EQUAL    &kp GRAVE &kp LPAR &kp RPAR &kp MINUS &kp PIPE
-                &kp CARET &kp N4 &kp N5 &kp N6 &kp PLUS     &kp AMPS  &kp LBKT &kp RBKT &kp AT    &kp BSLH
-                                        &trans &kp N0       &trans    &trans 
+                &kp DLLR  &kp N7 &kp N8 &kp N9  &kp STAR     &kp TILDE &kp LBKT &kp RBKT &kp HASH  &kp PRCNT 
+                &kp EXCL  &kp N1 &kp N2 &kp N3  &kp EQUAL    &kp GRAVE &kp LPAR &kp RPAR &kp MINUS &kp PIPE
+                &kp CARET &kp N4 &kp N5 &kp N6  &kp PLUS     &kp AMPS  &kp LBRC &kp RBRC &kp AT    &kp BSLH
+                                        &kp DOT &kp N0       &trans    &trans 
             >;
         };
 
