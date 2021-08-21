@@ -84,6 +84,12 @@
             bindings = <&kp TAB>;
         };
 
+        combo_enter {
+            timeout-ms = <100>;
+            key-positions = <1 3>;
+            bindings = <&kp ENTER>;
+        };
+
         combo_q {
             timeout-ms = <100>;
             key-positions = <1 2>;
