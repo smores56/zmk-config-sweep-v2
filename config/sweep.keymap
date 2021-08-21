@@ -84,12 +84,6 @@
             bindings = <&kp TAB>;
         };
 
-        combo_enter {
-            timeout-ms = <100>;
-            key-positions = <1 3>;
-            bindings = <&kp ENTER>;
-        };
-
         combo_q {
             timeout-ms = <100>;
             key-positions = <1 2>;
@@ -121,9 +115,9 @@
         MAIN_layer {
             bindings = <
                 &kp J       &kp F      &kp M       &kp P      &kp V          &colon_swap &dot_and   &slash_star &dqt_question &sqt_exclam
-                &kp R       &kp S      &kp N       &lt SYM D  &kp W          &comma_pipe &lt SYM A  &kp E       &kp I         &kp H
+                &kp R       &kp S      &kp N       &kp D      &kp W          &comma_pipe &kp A      &kp E       &kp I         &kp H
                 &mt LSHFT X &mt LALT G &mt LCTRL L &mt LGUI C &kp B          &kp MINUS   &mt RGUI U &mt RCTRL O &mt RALT Y    &mt RSHFT K
-                                                   &sk LSHFT  &lt NAV SPC    &kp T       &kp BKSP
+                                                   &sk LSHFT  &lt NAV SPC    &lt SYM T   &kp BKSP
             >;
         };
 
@@ -141,7 +135,7 @@
                 &kp C_PREV &kp C_VOL_DN &kp C_VOL_UP &kp C_NEXT &kp C_PP           &none        &kp CAPS         &kp PRINTSCREEN  &none          &none
                 &kp LEFT   &kp DOWN     &kp UP       &kp RIGHT  &kp LC(TAB)        &kp LG(O)    &kp LS(LG(DOWN)) &kp LC(LG(DOWN)) &kp LC(LG(UP)) &kp LS(LG(UP))
                 &kp HOME   &kp PG_DN    &kp PG_UP    &kp END    &kp LS(LC(TAB))    &kp LG(FSLH) &kp LG(LEFT)     &kp LG(DOWN)     &kp LG(UP)     &kp LG(RIGHT)
-                                                     &none      &none              &trans       &kp DEL
+                                                     &none      &none              &lt FN ENTER &kp DEL
             >;
         };
 
