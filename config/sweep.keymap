@@ -12,6 +12,7 @@
 #define SYM 1
 #define NAV 2
 #define WM 3
+#define BT 4
 
 &mt {
     flavor = "tap-preferred";
@@ -86,10 +87,10 @@
 
         MAIN_layer {
             bindings = <
-                &kp Y       &kp C      &kp L       &kp M      &kp K          &kp Z     &kp F      &kp U          &kp COMMA   &kp APOS
-                &kp I       &kp S      &lt WM R    &lt SYM T  &kp G          &kp P     &lt SYM N  &lt WM E       &kp A       &kp O
-                &mt LSHFT Q &mt LALT V &mt LCTRL W &mt LGUI D &kp J          &kp B     &mt RGUI H &mt RCTRL FSLH &dot_exclam &mt RSHFT X
-                                                   &kp ENTER  &lt NAV SPC    &sk RSHFT &kp BKSP 
+                &kp Y       &kp C      &kp L       &kp M        &kp K          &kp Z     &kp F      &kp U          &kp COMMA   &kp APOS
+                &kp I       &kp S      &lt WM R    &lt SYM T    &kp G          &kp P     &lt SYM N  &lt WM E       &kp A       &kp O
+                &mt LSHFT Q &mt LALT V &mt LCTRL W &mt LGUI D   &kp J          &kp B     &mt RGUI H &mt RCTRL FSLH &dot_exclam &mt RSHFT X
+                                                   &lt BT ENTER &lt NAV SPC    &sk RSHFT &kp BKSP 
             >;
         };
 
@@ -109,15 +110,24 @@
                 &kp HOME   &kp PG_DN    &kp PG_UP    &kp END    &kp LS(LC(TAB))    &kp CAPS  &kp F4  &kp F5 &kp F6 &kp F12
                                                      &none      &none              &trans    &kp DEL
             >;
-        };	
+        };
 
         WM_layer {
             bindings = <
-                &none        &kp LG(R)    &kp LG(Q)  &kp LG(D)     &kp LG(V)      &kp LG(S) &kp LG(7) &kp LG(8) &kp LG(9) &none
-                &kp LG(DOWN) &kp LG(DOWN) &kp LG(UP) &kp LG(UP)    &kp LG(F1)     &kp LG(E) &kp LG(1) &kp LG(2) &kp LG(3) &kp LG(0)
-                &none        &kp LG(F)    &kp LG(O)  &kp LG(ENTER) &kp LG(H)      &kp LG(W) &kp LG(4) &kp LG(5) &kp LG(6) &none
+                &none        &kp LG(R)    &kp LG(Q)  &kp LG(D)     &none          &kp LG(S) &kp LG(7) &kp LG(8) &kp LG(9) &none
+                &kp LG(DOWN) &kp LG(DOWN) &kp LG(UP) &kp LG(UP)    &kp LG(L)      &kp LG(E) &kp LG(1) &kp LG(2) &kp LG(3) &kp LG(0)
+                &none        &kp LG(F)    &kp LG(O)  &kp LG(ENTER) &kp LG(T)      &kp LG(W) &kp LG(4) &kp LG(5) &kp LG(6) &none
                                                      &none         &kp LG(SPC)    &trans       &none
             >;
-        };	
+        };
+
+        BT_layer {
+            bindings = <
+                &none &none &none &none &none    &none &none        &none        &none        &none
+                &none &none &none &none &none    &none &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3
+                &none &none &none &none &none    &none &bt BT_CLR   &none        &none        &none
+                                  &none &none    &none &none
+            >;
+        };
     };
 };
