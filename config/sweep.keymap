@@ -114,10 +114,10 @@
 
         WM_layer {
             bindings = <
-                &none        &kp LG(R)    &kp LG(Q)  &kp LG(D)     &none          &kp LG(S) &kp LG(7) &kp LG(8) &kp LG(9) &none
-                &kp LG(DOWN) &kp LG(DOWN) &kp LG(UP) &kp LG(UP)    &kp LG(L)      &kp LG(E) &kp LG(1) &kp LG(2) &kp LG(3) &kp LG(0)
-                &none        &kp LG(F)    &kp LG(O)  &kp LG(ENTER) &kp LG(T)      &kp LG(W) &kp LG(4) &kp LG(5) &kp LG(6) &none
-                                                     &none         &kp LG(SPC)    &trans       &none
+                &none        &kp LG(Q)    &kp LG(T)  &kp LG(D)     &kp LG(P)      &kp LG(S) &kp LG(N7) &kp LG(N8) &kp LG(N9) &none
+                &kp LG(LEFT) &kp LG(DOWN) &kp LG(UP) &kp LG(RIGHT) &kp LG(L)      &kp LG(E) &kp LG(N1) &kp LG(N2) &kp LG(N3) &kp LG(N0)
+                &none        &kp LG(R)    &kp LG(O)  &kp LG(ENTER) &kp LG(F)      &kp LG(W) &kp LG(N4) &kp LG(N5) &kp LG(N6) &none
+                                                     &none         &kp LG(SPC)    &trans    &none
             >;
         };
 
